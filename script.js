@@ -22,6 +22,10 @@ const uploadFile = async data => {
 
     const uploadPromise = await fetch("https://httpbin.org/post", options);
 
-    const uploadRes = await uploadPromise.json();
-    console.log(uploadRes.files);
+    if(uploadPromise.ok){
+        const uploadRes = await uploadPromise.json();
+        console.log(uploadRes.files);
+    }else{
+        console.error(uploadPromise.status)
+    }
 }
