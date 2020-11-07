@@ -18,5 +18,9 @@ const uploadFile = async data => {
     const options = {
         method: "POST",
         body: formData
-    }
+    };
+
+    const uploadPromise = await fetch("https://httpbin.org/post", options);
+
+    
 }
