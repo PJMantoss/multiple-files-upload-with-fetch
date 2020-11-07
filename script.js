@@ -1,0 +1,1 @@
+const uploadForm = document.getElementById("uploadForm")
