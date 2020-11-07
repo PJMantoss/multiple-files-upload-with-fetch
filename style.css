@@ -8,4 +8,25 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+input[type="submit"]{
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 16px;
+    width: 100px;
+    height: 43px;
+    background: orange;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background: black;
+    color: white;
 }
